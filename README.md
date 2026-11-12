@@ -24,9 +24,14 @@ A beginner-friendly application tracker built with Python, Streamlit, and SQLite
    streamlit run app.py
    ```
 
-The app lets you add and view applications, see the total number of applications,
-find the most frequently applied-for role, and view a summary of applications by
+The app lets you add, search, filter, update, and delete applications; export
+records to CSV; view upcoming interviews; see the total number of applications;
+find the most frequently applied-for role; and view a summary of applications by
 status.
+
+Interview dates are optional. The app and `init_db.py` add the `interview_date`
+column automatically when using an existing database, so existing application
+records are preserved.
 
 The `placements.db` database is created on your computer and is intentionally
 excluded from Git so personal application data is not published.
